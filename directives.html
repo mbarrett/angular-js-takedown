@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+</head>
+	<body data-ng-init="devs=['Mark', 'John', 'Ben', 'Andy']">
+		Name:
+		<br />
+		<input type="text" data-ng-model="name" /> {{ name }}
+		<br />
+		<div class="container">
+			<h3>Looping with ng-repeat</h3>
+			<ul>
+				<li data-ng-repeat="dev in devs">{{ dev }}</li>
+			</ul>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+	</body>
+</html>
